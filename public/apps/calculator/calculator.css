@@ -1,0 +1,27 @@
+.result {
+  width: 100%;
+  height: 80px;
+  padding: 0 10px;
+  text-align: right;
+  font-size: 44px;
+  color: #ffffff;
+  border: none;
+}
+
+.big {
+  height: 60px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.calc-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0;
+}
+
+.equal {
+  height: 100%;
+  grid-area: 2/4/6/5;
+}

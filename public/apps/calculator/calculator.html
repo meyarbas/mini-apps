@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Apps - Calculator</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="calculator.css">
+  <style>
+    @font-face {
+      font-family: bootstrap-icons;
+      src: url(/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid min-vh-100 bg-dark-subtle">
+
+    <div class="row justify-content-md-center my-0 py-3">
+      <div class="col col-md-12">
+        <header class="container-md bg-opacity-100 px-0 px-md-0">
+
+          <nav class="navbar navbar-expand-md d-none d-md-block">
+            <div class="container-fluid px-0">
+              <a class="navbar-brand fs-2 fw-semibold" href="/index.html">Mini Apps</a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav fs-5">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Apps
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li><a class="dropdown-item" href="/apps/calculator/calculator.html">Calculator</a></li>
+                      <li><a class="dropdown-item" href="/apps/weather/weather.html">Weather</a></li>
+                      <li><a class="dropdown-item" href="/apps/todolist/todolist.html">To-Do List</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-dark d-block d-md-none">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2 fw-semibold" href="/index.html">Mini Apps</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Apps
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/apps/calculator/calculator.html">Calculator</a></li>
+                        <li><a class="dropdown-item" href="/apps/weather/weather.html">Weather</a></li>
+                        <li><a class="dropdown-item" href="/apps/todolist/todolist.html">To-Do List</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        </header>
+      </div>
+    </div>
+
+    <hr class="m-0">
+
+    <div class="row bg-dark justify-content-md-center my-0 pt-4 pb-0 pt-sm-5 pb-sm-4">
+      <div class="col col-md-12">
+        <main class="container-md px-2 px-md-0">
+
+          <article>
+
+            <div class="row">
+              <div class="col-12 col-sm-8 col-lg-6 col-xl-4 mb-4">
+                <div class="card bg-body-secondary">
+                  <div class="card-header">Calculator</div>
+                  <div class="card-body">
+
+                    <div class="calculator">
+                      <input type="text" class="bg-dark result" name="" id="" value="0" disabled>
+                      <div class="calc-button">
+                        <!-- Operator buttons -->
+                        <button class="btn big btn-primary optButton">+</button>
+                        <button class="btn big btn-primary optButton">-</button>
+                        <button class="btn big btn-primary optButton">*</button>
+                        <button class="btn big btn-primary optButton">/</button>
+                        <!-- Number buttons -->
+                        <button class="btn big btn-light numButton">7</button>
+                        <button class="btn big btn-light numButton">8</button>
+                        <button class="btn big btn-light numButton">9</button>
+                        <button class="btn big btn-light numButton">4</button>
+                        <button class="btn big btn-light numButton">5</button>
+                        <button class="btn big btn-light numButton">6</button>
+                        <button class="btn big btn-light numButton">1</button>
+                        <button class="btn big btn-light numButton">2</button>
+                        <button class="btn big btn-light numButton">3</button>
+                        <button class="btn big btn-light numButton">0</button>
+                        <!-- Point button -->
+                        <button class="btn big btn-dark numButton">.</button>
+                        <!-- All Clear button -->
+                        <button class="btn big btn-danger clear">AC</button>
+                        <!-- Equal button -->
+                        <button class="btn big btn-info equal">=</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </article>
+
+        </main>
+      </div>
+    </div>
+
+    <hr class="m-0">
+
+    <div class="row justify-content-md-center py-5">
+      <div class="col col-md-12">
+        <footer class="container-md px-2 px-md-0">
+          <p class="mb-3">&copy 2024 - Mehmet Emre Yarbas</p>
+          <p>
+            <a class="btn btn-dark" href="https://www.linkedin.com/in/meyarbas" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="btn btn-dark" href="https://www.behance.net/meyarbas" target="_blank">
+              <i class="bi bi-behance"></i>
+            </a>
+            <a class="btn btn-dark" href="https://github.com/meyarbas" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a class="btn btn-dark" href="https://vercel.com/meyarbas" target="_blank">
+              <i class="bi bi-triangle-fill"></i>
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>    
+
+  </div>
+
+  <script src="calculator.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

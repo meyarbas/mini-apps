@@ -1,0 +1,17 @@
+.card-body {
+  background-image: url('./img/background-01.jpg');
+  background-position: center;
+  background-repeat: cover;
+  height: 50vh;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+  text-shadow: 1px 3px 5px rgba(0,0,0,.6);
+}
+
+.desc {
+  text-transform: capitalize;
+}

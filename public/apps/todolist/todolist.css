@@ -1,0 +1,8 @@
+#todoList li.completed .todoText {
+  text-decoration: line-through;
+}
+
+#newTodo {
+  padding: 10px;
+  width: 100%;
+}
